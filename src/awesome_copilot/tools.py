@@ -17,14 +17,13 @@ def register_tools(mcp: FastMCP):
     async def add_tool(args: SumArgs) -> Dict[str, Any]:
         return {"result": args.a + args.b}
 
-
     # Exemplo de tool que usa recursos
+
     @mcp.tool(name="store.set", description="Salva um valor em store")
     async def store_set(key: str, value: Any) -> Dict[str, Any]:
         res = get_resources()
         res["store"].set(key, value)
         return {"ok": True}
-
 
     @mcp.tool(name="store.get", description="Recupera um valor do store")
     async def store_get(key: str) -> Dict[str, Any]:

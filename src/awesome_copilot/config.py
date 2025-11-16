@@ -3,6 +3,7 @@ from typing import Optional
 from pydantic_settings import BaseSettings
 from pydantic import ConfigDict
 
+
 class Settings(BaseSettings):
     server_name: str = "awesome-copilot/mcp"
     version: str = "0.1.0"

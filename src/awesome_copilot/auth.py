@@ -1,7 +1,5 @@
 from typing import Optional
 import hmac
-import hashlib
-import os
 
 
 # Exemplo simples de validação de api key; em produção, use Vault/Secrets Manager
