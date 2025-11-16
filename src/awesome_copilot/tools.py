@@ -1,7 +1,7 @@
 from typing import Any, Dict
 from pydantic import BaseModel
 from fastmcp import FastMCP  # ajuste conforme SDK real
-from resources import get_resources
+from .resources import get_resources
 
 
 class SumArgs(BaseModel):
