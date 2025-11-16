@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "mcp-server"
+version = "0.1.0"
+description = "MCP server scaffold in Python"
+authors = ["Seu Nome <you@example.com>"]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+# Ajuste o pacote do SDK oficial conforme o nome real
+mcp = "^0.1.0"
+pydantic = "^1.10"
+uvicorn = "^0.22"
+fastapi = "^0.95"
+loguru = "^0.7"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+pytest-asyncio = "^0.20"
+ruff = "^0.18"
+mypy = "^1.8"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
